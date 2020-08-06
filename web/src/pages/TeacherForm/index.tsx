@@ -1,9 +1,40 @@
 import React from 'react';
 
+import PageHeader from "../../components/PageHeader/";
+
+import './styles.css';
+
 function TeacherForm() {
     return (
-        <h1>Teachers</h1>
-    );
+        <div className="container" id="page-teacher-form">
+            <PageHeader
+                title="Que incrível que você quer dar aulas"
+                description="O primeiro passo é preencher esse formulário de inscrição."
+            />
+
+            <main>
+                <fieldset>
+                    <legend>Seus dados</legend>
+
+                    <div className="input-block">
+                        <label htmlFor="name">Nome completo</label>
+                        <input type="text" id="name" />
+                    </div>
+
+                    <div className="input-block">
+                        <label htmlFor="name">Avatar</label>
+                        <input type="text" id="avatar" />
+                    </div>
+
+                    <div className="input-block">
+                        <label htmlFor="name">WhatsApp</label>
+                        <input type="number" id="whatsapp" />
+                    </div>
+
+                </fieldset>
+            </main>
+        </div>
+    )
 };
 
 export default TeacherForm;
