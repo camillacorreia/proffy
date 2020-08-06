@@ -2,6 +2,7 @@ import React from 'react';
 
 import PageHeader from "../../components/PageHeader/";
 import Input from '../../components/Input';
+import Select from '../../components/Select';
 
 import warningIcon from "../../assets/images/icons/warning.svg";
 
@@ -29,7 +30,15 @@ function TeacherForm() {
                 <fieldset>
                     <legend>Sobre a aula</legend>
 
-                    <Input name="subject" label="Matéria" />
+                    <Select
+                        name="subject"
+                        label="Matéria"
+                        options={[
+                            { value: 'Artes', label: 'Artes' },
+                            { value: 'Física', label: 'Física' },
+                            { value: 'Português', label: 'Português' }
+                        ]}
+                    />
                     <Input name="cost" label="Custo da sua hora por aula" type="number" />
 
                 </fieldset>
