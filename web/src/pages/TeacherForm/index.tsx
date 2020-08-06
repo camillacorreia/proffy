@@ -6,6 +6,7 @@ import Input from '../../components/Input';
 import warningIcon from "../../assets/images/icons/warning.svg";
 
 import './styles.css';
+import Textarea from '../../components/Textarea';
 
 function TeacherForm() {
     return (
@@ -22,7 +23,7 @@ function TeacherForm() {
                     <Input name="name" label="Nome completo" />
                     <Input name="avatar" label="Avatar" />
                     <Input name="whatsapp" label="WhatsApp" type="number" />
-
+                    <Textarea name="bio" label="Biografia" />
                 </fieldset>
 
                 <fieldset>
@@ -32,7 +33,7 @@ function TeacherForm() {
                     <Input name="cost" label="Custo da sua hora por aula" type="number" />
 
                 </fieldset>
-                
+
                 <footer>
                     <p>
                         <img src={warningIcon} alt="Aviso Importante" />
